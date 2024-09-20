@@ -19,7 +19,6 @@ if __name__ == "__main__":
     parser.add_argument('--batch_size_extractor', type=int, default=1024, help='Batch size for training (default: 32)')
     parser.add_argument('--result_path', type=str, default='../results/logs_md/', help='path to save best model')
     parser.add_argument('--num_clusters', type=int, default=50, help='Number of clusters for KMeans')
-    parser.add_argument('--model_type', type=str, default='xgb', help='Type of the model: rf, xgb, lr, or mlp')
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size for training for MLP')
     parser.add_argument('--epochs', type=int, default=10, help='Number of training epochs')
     parser.add_argument('--lr', type=float, default=0.0001, help='Learning rate')
