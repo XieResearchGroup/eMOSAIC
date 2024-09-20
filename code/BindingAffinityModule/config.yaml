@@ -1,0 +1,10 @@
+#
+path2uniprot2map: '../mapping/pfam2value_map.pkl'
+
+max_length: 700
+seed: 42
+
+num_layers: 2
+chem_embed_dim: 300
+combined_dim: 1004
+gnn_type: gin
