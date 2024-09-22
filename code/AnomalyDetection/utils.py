@@ -100,8 +100,7 @@ def create_df_results(pred, df, file_name, checkpoint_dir):
         'SMILES': df['SMILES'],
         'uniprot|pfam': df['uniprot|pfam']
     })
-    tolerances = [0.5, 1, 2, 3]
-    for tol in tolerances:
-        df_results[f'Tolerance {tol}'] = np.where(df_results['predicted_residue'] < tol, 'Normal', 'Outlier')
+    tolerance = 0.5
+    df_results[f'Tolerance {tolerance}'] = np.where(df_results['predicted_residue'] < tolerance, 'Normal', 'Outlier')
     file_path = os.path.join(checkpoint_dir, f'residues_values_analysis_{file_name}.csv')
     df_results.to_csv(file_path)
