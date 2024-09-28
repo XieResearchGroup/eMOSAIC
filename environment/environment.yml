@@ -14,3 +14,19 @@ dependencies:
   - xgboost=2.0.3
   - scipy=1.10.0
   - pip=23.0
+  - rdkit   
+  - cudatoolkit=11.3 
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip:
+      - torch==1.12.1+cu113
+      - torchvision==0.13.1+cu113
+      - torchaudio==0.12.1+cu113
+      - pyg_lib
+      - torch_scatter
+      - torch_sparse
+      - torch_cluster
+      - torch_spline_conv
+      - torch-geometric==2.2.0
+      - -f https://data.pyg.org/whl/torch-1.12.1+cu113.html
