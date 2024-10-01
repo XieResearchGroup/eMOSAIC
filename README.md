@@ -13,7 +13,7 @@ The dataset folder contains more information and scripts to help generate the em
 
 ## Environment
 
-1. CUDA : x Python : y
+1. CUDA : 11.3 Python : 3.10.9
 2. The other dependencies can be installed with the requirements.txt file present under the environment folder
 
 ## Usage
